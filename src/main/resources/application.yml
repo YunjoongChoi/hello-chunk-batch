@@ -1,0 +1,18 @@
+spring:
+  batch:
+    job:
+      names: ${job.name:NONE}
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: #YOUR_DB#
+    username: #YOUR_NAME#
+    password: #YOUR_PW#
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
